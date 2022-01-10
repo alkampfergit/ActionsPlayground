@@ -5,10 +5,10 @@ name: PowerShellGallery
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ ]
+  push: 
+    branches-ignore: ['master']
   pull_request:
-    branches: [ ]
+    branches-ignore: ['master']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,6 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Runs some powershell
         shell: pwsh
+        continue-on-error: true
         run: |
           Install-Module -Name BuildUtils -AllowPrerelease -RequiredVersion 0.4.0-alpha0024 -Scope CurrentUser -Force
           Import-Module BuildUtils
