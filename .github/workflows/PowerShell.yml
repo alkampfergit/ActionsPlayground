@@ -31,7 +31,7 @@ jobs:
         continue-on-error: true
         run: |
           # Install-Module -Name BuildUtils -AllowPrerelease -RequiredVersion 0.4.0-alpha0025 -Scope CurrentUser -Force
-          Install-Module -Name BuildUtils -Scope CurrentUser
+          Install-Module -Name BuildUtils -Scope CurrentUser -Force
           # Update-Module -Name BuildUtils -Scope CurrentUser -Force
           Import-Module BuildUtils
           $ci_engine = 'github'
