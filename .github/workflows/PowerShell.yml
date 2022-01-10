@@ -30,6 +30,7 @@ jobs:
         shell: pwsh
         run: |
           Install-Module -Name BuildUtils -AllowPrerelease -RequiredVersion 0.4.0-alpha0023
+          Import-Module BuildUtils
           $ci_engine = 'github'
           Write-LogError "This is the first error"
           Write-LogError -Message "This is second error then exit" -$haltExecution $true
