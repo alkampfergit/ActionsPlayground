@@ -36,5 +36,5 @@ jobs:
           Import-Module BuildUtils
           $ci_engine = 'github'
           Write-LogError "This is the first error"
-          Write-LogError -Message "This is second error then exit" -$haltExecution $true
+          Write-LogError -Message "This is second error then exit" -haltExecution $True
           Write-LogError "This is the third error"
