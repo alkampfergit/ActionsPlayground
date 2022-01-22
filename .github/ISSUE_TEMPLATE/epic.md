@@ -2,7 +2,7 @@
 name: Epic
 about: Suggest an idea for this project
 title: ''
-labels: ''
+labels: EPIC
 assignees: ''
 
 ---
