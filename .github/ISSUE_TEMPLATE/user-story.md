@@ -2,7 +2,7 @@
 name: User Story
 about: Standard Agile User Story
 title: ''
-labels: ''
+labels: USER STORY
 assignees: ''
 
 ---
